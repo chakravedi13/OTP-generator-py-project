@@ -61,6 +61,7 @@ Label(frame,font=('normal',14),text='Please choose length of OTP',fg='black',bg=
 Radiobutton(frame,text='4 Length',value=4,variable=len,font=('normal',12),fg='black',bg='white').place(x=150,y=280)
 Radiobutton(frame,text='6 Length',value=6,variable=len,font=('normal',12),fg='black',bg='white').place(x=150,y=310)
 Radiobutton(frame,text='8 Length',value=8, variable=len,font=('normal',12),fg='black',bg='white').place(x=150,y=340)
+Radiobutton(frame,text='10 Length',value=10, variable=len,font=('normal',12),fg='black',bg='white').place(x=150,y=360)
 
 
 window.mainloop()
