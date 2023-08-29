@@ -18,10 +18,9 @@ window.configure(bg='white')
 Label(window,font=('bold',30),text='OTP GENERATOR',bg='white',fg='black').pack()
 
 img = PhotoImage(file='otp-banner-image.png')
-Label(window,image=img,bg='white').place(x=50,y=50)
+Label(window,image=img,bg='white').place(x=40,y=40)
 
-#frame1=Frame(window,width=410,height=390,bg='#f5f6fa')
-#frame1.place(x=485,y=95)
+
 frame=Frame(window,width=390,height=370,bg='white')
 frame.place(x=490,y=100)
 
@@ -34,7 +33,7 @@ len=tkinter.IntVar()
 
 def password_generate(leng):
     valid_char='0123456789'
-    #ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz@#$*
+
     password=''.join(random.sample(valid_char,leng))
     code = Label(frame,width=15,text = password,fg='black',border=0,bg='white',font=('Microsoft Yahei UI Light',20,'bold'))
     code.place(x=70,y=80)
